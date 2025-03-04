@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <link rel="icon" type="image/png" href="/icons/youtube.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/tag.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-pictures/channel-pic.jpg"
+        />
+      </div>
+      <div class="right-section-mobile-view">
+        <img class="search-icon" src="icons/search.svg" />
+        <img
+          class="current-user-picture"
+          src="channel-pictures/channel-pic.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <!-- semantic elements -->
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-1.jpg" />
+            <div class="video-time">2:51</div>
+          </div>
+
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-1.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Build Your First Website: A Guide to Web Development
+              </p>
+              <p class="video-author">Muyalogy</p>
+              <p class="video-stats">50k views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-3.jpg" />
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-2.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Apple Vision Pro w/ Android?</p>
+              <p class="video-author">Unbox Therapy</p>
+              <p class="video-stats">1.3M views &#183;4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-4.jpg" />
+            <div class="video-time">50:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-3.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                በ2046 AI የሰውን intelligence ያልፋል - With Solomon Kassa - S08 EP84
+              </p>
+              <p class="video-author">MERI PODCAST</p>
+              <p class="video-stats">151K views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-5.jpg" />
+            <div class="video-time">1:22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-4.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Next.js E-Commerce App Full Tutorial with the Best Headless
+                Solution
+              </p>
+              <p class="video-author">Lama Dev &#10003;</p>
+              <p class="video-stats">30k views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-6.jpg" />
+            <div class="video-time">59:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-5.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">TobyMac - I just need U. (Audio)</p>
+              <p class="video-author">TobyMac</p>
+              <p class="video-stats">1M views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-7.jpg" />
+            <div class="video-time">29:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-6.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Trump’s team could ‘benefit’ from this in NY trial: Attorney
+              </p>
+              <p class="video-author">Fox News &#10003;</p>
+              <p class="video-stats">66K views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-8.jpg" />
+            <div class="video-time">33:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-7.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Unlock Your Inner Artist: Learn to Draw Realistic Portraits with
+                the Loomis Method
+              </p>
+              <p class="video-author">One Pencil drawing</p>
+              <p class="video-stats">2.8M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-9.jpg" />
+            <div class="video-time">10:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-8.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                She’s psychic and she predicts the world is about to end
+              </p>
+              <p class="video-author">Ray William Johnson</p>
+              <p class="video-stats">141M views &#183; 1 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-10.jpg" />
+            <div class="video-time">15:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-9.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Sean Strickland vs Israel Adesanya | FULL FIGHT | UFC 302
+              </p>
+              <p class="video-author">UFC &#10003;</p>
+              <p class="video-stats">1.7M views &#183; 11 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-11.jpg" />
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-10.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Apple's New Glasses Are Genius, Here's Why
+              </p>
+              <p class="video-author">Simply Tech</p>
+              <p class="video-stats">177K views views &#183;6 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-12.jpg" />
+            <div class="video-time">28:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-11.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                World's Coolest Concept Car - Mercedes AVTR
+              </p>
+              <p class="video-author">Supercar Blondie</p>
+              <p class="video-stats">58M views &#183; 3 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-web-13.jpg" />
+            <div class="video-time">10:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-pictures/channels-web-12.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Creating OFFICIAL Artwork for Liverpool FC! Photoshop
+              </p>
+              <p class="video-author">Ethan J Design</p>
+              <p class="video-stats">148K views &#183; 2 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
